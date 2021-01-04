@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: myFont;
+    src: url(../font/mandalore-font/Mandalore-K77lD.otf)
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    background: transparent;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    background:white;
+    box-shadow: 0 0px 40px rgb(68, 68, 68);
+    opacity: 0.6;
+    border-radius: 20px;
+}
+
+header > h1 {
+    font-family: myFont;
+    font-size: 3rem;
+    color: black;
+    margin-left: 1rem;
+    z-index: 5;
+}
+
+nav {
+    transform: rotate(90deg);
+    color: black;
+}
