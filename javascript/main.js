@@ -1,4 +1,6 @@
 let scene, camera, renderer, stars, starGeo;
+let leftIndex = 0;
+let leftIndexHello = 0;
 
 function init() {
 
@@ -38,6 +40,8 @@ function init() {
     window.addEventListener("resize", onWindowResize, false);
 
     animate(); 
+    setTimeout(helloLaunch,4000);
+    setTimeout(typeWriter, 8000)
 }
 
 function onWindowResize() {
@@ -63,13 +67,25 @@ function animate() {
     requestAnimationFrame(animate);
 }
 
-const card = document.querySelector('.card');
-const container = document.querySelector('.container');
 
-container.addEventListener('mousemove', (e) => {
-    xAx = window.innerWidth / 2 - e.pageX / 50;
-    yAx = window.innerHeight / 2 - e.pageY / 50;
-    card.style.transform = `rotateY(${xAx}deg) rotateX(${yAx}deg)`
 
-})
+function helloLaunch(){
+    const hello = document.querySelector('.giphydiv')
+
+    if(leftIndexHello < window.innerWidth + 450){
+        leftIndexHello = leftIndexHello + 2.5
+        hello.style.marginLeft = leftIndexHello + 'px'
+        requestAnimationFrame(helloLaunch)
+    }
+
+    else{
+        hello.parentNode.removeChild(hello)
+    }
+     
+
+}
+function typeWriter(){
+    const texts = ['lorem', 'dipsum', 'nipsum']
+}
+
 init();
