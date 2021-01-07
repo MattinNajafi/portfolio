@@ -81,6 +81,28 @@ canvas{
     margin-top: 1rem;
 }
 
+.text-content-buttons-1.mario{
+    animation: padd 1s ease;
+}
+
+@keyframes padd{
+    0%{
+        margin-bottom: 0px;
+    }
+    25%{
+        margin-bottom: 5px;
+    }
+    50%{
+        margin-bottom: 10px;
+    }
+    75%{
+        margin-bottom: 5px;
+    }
+    100%{
+        margin-bottom: 0px;
+    }
+}
+
 .cursor0, .cursor1, .cursor2{
     width: 1px;
     margin-left: 1px;
@@ -108,4 +130,8 @@ canvas{
     padding: 0.7rem 1.5rem;
     text-transform: uppercase;
     margin-right: 2px;
+}
+
+.explosion{
+    width: 150px;
 }
