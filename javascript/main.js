@@ -1,6 +1,10 @@
 let scene, camera, renderer, stars, starGeo;
-let leftIndex = 0;
-let leftIndexHello = 0;
+const texts = ['It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using', 'It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum', 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,']
+let count = 0
+let typeWriterIndex = 0;
+let currentText = '';
+let letter = '';
+let leftIndexHello = -640;
 
 function init() {
 
@@ -41,7 +45,7 @@ function init() {
 
     animate(); 
     setTimeout(helloLaunch,4000);
-    setTimeout(typeWriter, 8000)
+    setTimeout(typeWriter, 10000)
 }
 
 function onWindowResize() {
@@ -72,8 +76,8 @@ function animate() {
 function helloLaunch(){
     const hello = document.querySelector('.giphydiv')
 
-    if(leftIndexHello < window.innerWidth + 450){
-        leftIndexHello = leftIndexHello + 2.5
+    if(leftIndexHello < window.innerWidth + 200){
+        leftIndexHello = leftIndexHello + 8
         hello.style.marginLeft = leftIndexHello + 'px'
         requestAnimationFrame(helloLaunch)
     }
@@ -85,7 +89,40 @@ function helloLaunch(){
 
 }
 function typeWriter(){
-    const texts = ['lorem', 'dipsum', 'nipsum']
+   let cursor = document.querySelector(`.cursor${count}`)
+   cursor.style.display = 'inline'
+   cursor.classList.add('typing')
+   if(count === texts.length){
+       count = 0
+    }
+    
+    currentText = texts[count]
+    letter = currentText.slice(0, ++typeWriterIndex)
+    document.querySelector(`.text-section-${count}`).textContent = letter;
+    
+    if(letter.length === currentText.length){
+        cursor.classList.remove('typing')
+        if(count !== 2){
+
+            let buttonDiv = document.createElement('div');
+            buttonDiv.className = 'button-div'
+            buttonDiv.innerHTML = '<button id="continue"> Continue </button> '
+            document.querySelector(`.text-content-buttons-${count}`).appendChild(buttonDiv)
+            
+            document.querySelector('#continue').addEventListener('click', function(){
+                cursor.parentNode.removeChild(cursor)
+                count++
+                typeWriterIndex = 0
+                typeWriter()
+                buttonDiv.parentNode.removeChild(buttonDiv)
+            })
+        }
+
+
+    }
+    else{
+        setTimeout(typeWriter, 100)
+    }
 }
 
 init();

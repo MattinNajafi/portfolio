@@ -17,51 +17,95 @@
 body {
     width: 100vw;
     height: 100vh;
-    background: white;;
+    background: black;
     overflow: hidden;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    flex-direction: column;
 }
 
-header > h1 {
-    font-family: headerFont;
-    font-size: 3rem;
-    color: white;
-    margin-left: 1rem;
-    z-index: 5;
-}
-.main{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 30rem;
-    font-size: 1.3rem;
-    font-weight: 100;
-    padding-left: 1rem;
-    margin-top: 2rem;
-}
-.giphydiv{
+canvas{
     position: absolute;
-    height: 100px;
-    width: 100px;
+    top: 0;
+    left:0;
+    z-index: -1;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+/* GIPHY */
+
+.giphydiv{
+    height: 300px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    margin-top: 10rem;
-    left: -319px;
-    
+    margin-left: -41.5rem;
 }
 #rocket {
     height: 220px;
     border:0;
     transform: rotate(45deg);
-    margin-top: -30px;
-    position: absolute;
-    margin-left: 16rem;
+    margin-left: -4rem;
+    margin-bottom: 3rem;
 }
 
 #hello{
     width: 480px;
     height: 480px;
     border:0;
-    position: absolute;
+}
+
+/* TYPEWRITER */
+.text-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 3rem;
+    width: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: white;    
+}
+
+
+
+.text-content-buttons-0, .text-content-buttons-1, .text-content-buttons-2{
+    margin-top: 1rem;
+}
+
+.cursor0, .cursor1, .cursor2{
+    width: 1px;
+    margin-left: 1px;
+    animation: blink 1s infinite;
+    display: none;
+}
+.cursor0.typing, .cursor1.typing, .cursor2.typing{
+    animation: none;
+    display: block;
+    background: white;
+}
+
+@keyframes blink {
+    0%{background: white;}
+    49%{background: white;}
+    50%{background: transparent;}
+    99%{background: transparent;}
+    100%{background: white;}
+}
+
+#continue, #cancel{
+    border: 1.5px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    text-transform: uppercase;
+    margin-right: 2px;
 }
