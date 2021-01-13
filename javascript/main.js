@@ -77,7 +77,7 @@ function helloLaunch(){
     const hello = document.querySelector('.giphydiv')
 
     if(leftIndexHello < window.innerWidth + 200){
-        leftIndexHello = leftIndexHello + 8
+        leftIndexHello = leftIndexHello + 10
         hello.style.marginLeft = leftIndexHello + 'px'
         requestAnimationFrame(helloLaunch)
     }
