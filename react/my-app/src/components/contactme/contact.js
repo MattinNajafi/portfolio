@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
 class ContactMe extends React.Component {
-    state = {  }
-    render() { 
-        return ( <></> );
-    }
+  state = {};
+  render() {
+    return <>Contact</>;
+  }
 }
- 
+
 export default ContactMe;

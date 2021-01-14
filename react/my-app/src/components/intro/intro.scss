@@ -1,0 +1,19 @@
+.introbars {
+  height: 100vh;
+}
+
+.introbox {
+  position: absolute;
+  height: 100vh;
+  width: 33.333vw;
+  background: black;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.introbox:nth-child(2) {
+  left: 33.333%;
+}
+.introbox:nth-child(3) {
+  left: 66.666%;
+}

@@ -1,0 +1,46 @@
+.main {
+  height: calc(100% - 6rem);
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main > div {
+  height: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: -1;
+}
+
+.text-content-mainpage {
+  width: 70%;
+}
+
+.mainpage-me {
+  font-size: 2.5rem;
+}
+
+.img-mainpage {
+  perspective: 1000;
+  width: 30%;
+  height: 50%;
+  background-color: lightcoral;
+}
+
+.mainpage-me > span {
+  text-decoration: underline;
+  color: lightcoral;
+}
+
+.mainpage-me:last-child {
+  width: 100%;
+  font-size: 1rem;
+  text-decoration: underline;
+  z-index: -1;
+}
+.mainpage-me:nth-child(3) {
+  font-size: 2.5rem;
+  text-decoration: none;
+}

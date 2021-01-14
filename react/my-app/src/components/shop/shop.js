@@ -1,6 +1,6 @@
 import React from "react";
 
-class Shop extends Component {
+class Shop extends React.Component {
   state = {};
   render() {
     return <></>;

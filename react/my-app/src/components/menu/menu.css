@@ -1,0 +1,115 @@
+.entire-menu {
+  display: none;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+}
+
+.menu-background-color {
+  background-color: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.menu-layer {
+  position: relative;
+  background: lightcoral;
+  height: 100%;
+  overflow: hidden;
+}
+
+.interests-background {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation-name: backgroundEffect;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+.menu-container {
+  height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.menu-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+
+.links {
+  height: 90%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links > nav {
+  width: 50%;
+}
+
+.info {
+  width: 30%;
+  height: 30%;
+  padding: 1rem;
+  color: white;
+}
+
+.links > nav a {
+  text-decoration: none;
+  font-size: 6.5rem;
+  font-weight: 800;
+  color: white;
+}
+
+.links > nav li {
+  list-style: none;
+}
+
+.interest-bar {
+  color: white;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+@keyframes backgroundEffect {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 40% 10%;
+  }
+  50% {
+    background-position: 0 10%;
+  }
+  75% {
+    background-position: 10% 40%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
