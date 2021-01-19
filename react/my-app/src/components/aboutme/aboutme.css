@@ -1,0 +1,240 @@
+.about-me-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100% - 6rem);
+}
+
+.wrapper-aboutme {
+  margin-top: -6rem;
+  width: 80%;
+  font-size: 1.8rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.first {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.textbox h4 {
+  writing-mode: vertical-rl;
+  margin-right: 1rem;
+  font-weight: 400;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.textbox p {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  width: 80%;
+}
+.textbox {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+.imgbox {
+  width: 30%;
+  height: 100%;
+}
+
+.aboutme-introabout1 {
+  position: absolute;
+  background-color: rgb(179, 211, 134);
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.aboutme-introabout2 {
+  position: absolute;
+  background-color: #2c5f2d;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.icon-div {
+  width: 90%;
+  z-index: -1;
+}
+
+#insta {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+#fb {
+  font-size: 2.5rem;
+}
+#linkedin {
+  font-size: 2.5rem;
+}
+/* Skillsbar */
+
+.skills > li {
+  list-style-type: none;
+}
+
+.skills > li > h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.skills {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: black;
+}
+
+.skills li {
+  margin: 10px 0;
+}
+
+.bar {
+  background-color: #a9a2a2;
+  display: block;
+  height: 1rem;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.bar span {
+  height: 1rem;
+  float: left;
+  background-color: rgb(179, 211, 134);
+}
+
+.html {
+  width: 90%;
+}
+
+.css {
+  width: 80%;
+}
+
+.javascript {
+  width: 70%;
+}
+
+.react {
+  width: 70%;
+}
+.angular {
+  width: 35%;
+}
+.typescript {
+  width: 55%;
+}
+.bootstrap {
+  width: 50%;
+}
+
+@media screen and (max-width: 930px) {
+  .textbox {
+    width: 70%;
+  }
+  .textbox > p {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .textbox {
+    width: 70%;
+  }
+  .textbox > p {
+    font-size: 1rem;
+    letter-spacing: 0px;
+  }
+
+  .textbox > h4 {
+    font-size: 2rem;
+  }
+
+  .skills > li h3 {
+    font-size: 1rem;
+  }
+
+  .bar {
+    height: 0.8rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .wrapper-aboutme {
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  .first {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .textbox {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 5rem;
+  }
+
+  .textbox > p {
+    width: 100%;
+    font-size: 1.3rem;
+  }
+
+  .textbox > h4 {
+    writing-mode: initial;
+    font-size: 2.3rem;
+  }
+
+  .textbox > p {
+    font-size: 0.9rem;
+    letter-spacing: 0px;
+  }
+
+  .imgbox {
+    width: 100%;
+  }
+
+  .skills {
+    width: 100%;
+  }
+
+  .skills > li > h3 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  .icon-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 505px) {
+  .wrapper-aboutme {
+    margin-top: 1rem;
+  }
+  .textbox > h4 {
+    font-size: 2.3rem;
+  }
+}
+@media screen and (max-width: 405px) {
+  .textbox > h4 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 330px) {
+  .textbox > h4 {
+    font-size: 1.4rem;
+  }
+}

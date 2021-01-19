@@ -1,0 +1,283 @@
+.work-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 6rem);
+}
+
+.work-introabout1 {
+  position: absolute;
+  background-color: rgb(179, 211, 134);
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.work-introabout2 {
+  position: absolute;
+  background-color: #2c5f2d;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.work-wrapper {
+  width: 80%;
+  height: 100%;
+  display: flex;
+}
+
+.work-div-for-fixed {
+  width: 50%;
+  height: 100%;
+}
+
+.work-header {
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  margin-top: -6rem;
+  display: flex;
+  align-items: center;
+  z-index: -1;
+}
+
+.work-header > h3 {
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+.projects-div {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.projects-div > div {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.scroll {
+  position: fixed;
+  font-weight: 500;
+  writing-mode: vertical-rl;
+  right: 8%;
+  display: flex;
+  align-items: center;
+  z-index: -1;
+}
+.scroll::after {
+  width: 0.2rem;
+  display: block;
+  height: 5rem;
+  background-color: black;
+  content: "";
+  margin-top: 0.5rem;
+}
+
+.work-button {
+  border: 0;
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+  background: #2c5f2d;
+  cursor: pointer;
+  color: white;
+  transition: all 0.25s ease-out;
+}
+
+.work-button:hover {
+  background-color: white;
+  color: #2c5f2d;
+}
+
+#work-img {
+  height: 100%;
+  width: 100%;
+}
+
+.project1 {
+  width: 90%;
+  height: 50%;
+  background-image: url("../../img/janne.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1rem;
+  background-color: rgb(179, 211, 134);
+  color: black;
+  border: 3px solid #2c5f2d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.25s ease-in-out;
+  margin: 0 auto 2rem;
+}
+.project2 {
+  width: 90%;
+  height: 50%;
+  background-image: url("../../img/color.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1rem;
+  background-color: rgb(179, 211, 134);
+  color: black;
+  border: 3px solid #2c5f2d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.25s ease-in-out;
+  margin: 0 auto 2rem;
+}
+.project3 {
+  width: 90%;
+  height: 50%;
+  background-image: url("../../img/weather.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(179, 211, 134);
+  padding: 1rem;
+  color: black;
+  border: 3px solid #2c5f2d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.25s ease-in-out;
+  margin: 0 auto 2rem;
+}
+.project4 {
+  width: 90%;
+  height: 50%;
+  background-image: url("../../img/bob.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(179, 211, 134);
+  padding: 1rem;
+  color: black;
+  border: 3px solid #2c5f2d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.25s ease-in-out;
+  margin: 0 auto 2rem;
+}
+.project5 {
+  width: 90%;
+  height: 50%;
+  background-image: url("../../img/sneaker.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(179, 211, 134);
+  padding: 1rem;
+  color: black;
+  border: 3px solid #2c5f2d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.25s ease-in-out;
+  margin: 0 auto 2rem;
+}
+.project6 {
+  width: 90%;
+  height: 50%;
+  background-image: url("../../img/cv.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(179, 211, 134);
+  padding: 1rem;
+  color: black;
+  border: 3px solid #2c5f2d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.25s ease-in-out;
+  margin: 0 auto 2rem;
+}
+
+.projects-div > div > div:hover {
+  width: 100%;
+  height: 60%;
+  background-image: none;
+}
+.projects-div > div > div > h3 {
+  display: none;
+}
+.projects-div > div > div > p {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .project1,
+  .project2,
+  .project3,
+  .project4,
+  .project5,
+  .project6 {
+    height: 40%;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .project1,
+  .project2,
+  .project3,
+  .project4,
+  .project5,
+  .project6 {
+    height: 30%;
+  }
+  .work-header {
+    width: 40%;
+  }
+
+  .work-header > h3 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .work-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .project1,
+  .project2,
+  .project3,
+  .project4,
+  .project5,
+  .project6 {
+    height: 50%;
+    width: 100%;
+  }
+  .work-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    margin-top: 0;
+  }
+
+  .work-header > h3 {
+    font-size: 1rem;
+  }
+  .work-div-for-fixed {
+    width: 100%;
+    height: 10%;
+  }
+  .projects-div {
+    width: 100%;
+  }
+}

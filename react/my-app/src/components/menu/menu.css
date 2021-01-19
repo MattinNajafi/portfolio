@@ -7,22 +7,23 @@
   position: fixed;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 
 .menu-background-color {
-  background-color: black;
+  background-color: rgb(179, 211, 134);
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  position: fixed;
+  position: absolute;
   height: 100%;
   width: 100%;
   z-index: -1;
 }
 .menu-layer {
   position: relative;
-  background: lightcoral;
+  background: #2c5f2d;
   height: 100%;
   overflow: hidden;
 }
@@ -37,6 +38,7 @@
   width: 100%;
   opacity: 0;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   animation-name: backgroundEffect;
   animation-duration: 30s;
@@ -67,7 +69,8 @@
 }
 
 .links > nav {
-  width: 50%;
+  width: 80%;
+  display: block;
 }
 
 .info {
@@ -77,17 +80,26 @@
   color: white;
 }
 
-.links > nav a {
-  text-decoration: none;
-  font-size: 6.5rem;
+.links > nav li {
+  list-style: none;
+  overflow: hidden;
+  position: relative;
+  height: 135px;
+  font-size: 6rem;
   font-weight: 800;
   color: white;
 }
-
-.links > nav li {
-  list-style: none;
+.links > nav a {
+  position: absolute;
+  color: #fff;
+  text-decoration: none;
 }
-
+.links > nav > li:last-child {
+  color: khaki;
+}
+.links > nav a:hover {
+  color: black;
+}
 .interest-bar {
   color: white;
   height: 10%;
@@ -96,20 +108,103 @@
   width: 60%;
 }
 
+.copied {
+  font-size: 3.5rem;
+  font-weight: 900;
+  position: absolute;
+  color: black;
+  z-index: 1000;
+  left: 10%;
+  width: 100%;
+  top: 67%;
+  opacity: 1;
+  height: 100%;
+  display: none;
+}
+
+.contact-me {
+  color: khaki !important;
+  cursor: pointer;
+}
+.contact-me:hover {
+  color: black !important;
+  cursor: pointer;
+}
+
+.interest-bar > span:hover {
+  color: black;
+  cursor: pointer;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
 @keyframes backgroundEffect {
   0% {
-    background-position: 0% 0%;
+    background-position: 10% 50%;
   }
   25% {
-    background-position: 40% 10%;
+    background-position: 10% 10%;
   }
   50% {
-    background-position: 0 10%;
+    background-position: 30% 30%;
   }
   75% {
-    background-position: 10% 40%;
+    background-position: 10% 10%;
   }
   100% {
-    background-position: 0% 0%;
+    background-position: 50% 1%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .links > nav li {
+    font-size: 5rem;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 835px) {
+  .links > nav li {
+    font-size: 4rem;
+    height: 90px;
+  }
+  .interest-bar {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .links > .info {
+    display: none;
+  }
+
+  .links > nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .links > nav li {
+    font-size: 4rem;
+    height: 90px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .links > nav li {
+    font-size: 3rem;
+    height: 80px;
+  }
+
+  .interest-bar {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .links > nav li {
+    font-size: 2.5rem;
+    height: 60px;
+  }
+
+  .interest-bar {
+    font-size: 0.6rem;
   }
 }

@@ -1,137 +1,152 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@font-face{
-    font-family: headerFont;
-    src: url(../font/mandalore-font/Mandalore-K77lD.otf)
+@font-face {
+  font-family: headerFont;
+  src: url(../font/mandalore-font/Mandalore-K77lD.otf);
 }
 
-@font-face{
-    font-family: mainFont;
-    src: url(../font/chopsic-font/Chopsic-K6Dp.ttf)
+@font-face {
+  font-family: mainFont;
+  src: url(../font/chopsic-font/Chopsic-K6Dp.ttf);
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    background: black;
-    overflow: hidden;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
-canvas{
-    position: absolute;
-    top: 0;
-    left:0;
-    z-index: -1;
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
-.container{
-    width: 100%;
-    height: 100vh;
+.container {
+  width: 100%;
+  height: 100vh;
 }
 
 /* GIPHY */
 
-.giphydiv{
-    height: 300px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: -41.5rem;
+.giphydiv {
+  height: 300px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: -41.5rem;
 }
 #rocket {
-    height: 220px;
-    border:0;
-    transform: rotate(45deg);
-    margin-left: -4rem;
-    margin-bottom: 3rem;
+  height: 220px;
+  border: 0;
+  transform: rotate(45deg);
+  margin-left: -4rem;
+  margin-bottom: 3rem;
 }
 
-#hello{
-    width: 480px;
-    height: 480px;
-    border:0;
+#hello {
+  width: 480px;
+  height: 480px;
+  border: 0;
 }
 
 /* TYPEWRITER */
-.text-content{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    margin-left: 3rem;
-    width: 30%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-    color: white;    
+.text-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 3rem;
+  width: 30%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  color: white;
 }
 
-
-
-.text-content-buttons-0, .text-content-buttons-1, .text-content-buttons-2{
-    margin-top: 1rem;
+.text-content-buttons-0,
+.text-content-buttons-1,
+.text-content-buttons-2 {
+  margin-top: 1rem;
 }
 
-.text-content-buttons-1.mario{
-    animation: padd 1s ease;
+.text-content-buttons-1.mario {
+  animation: padd 1s ease;
 }
 
-@keyframes padd{
-    0%{
-        margin-bottom: 0px;
-    }
-    25%{
-        margin-bottom: 5px;
-    }
-    50%{
-        margin-bottom: 10px;
-    }
-    75%{
-        margin-bottom: 5px;
-    }
-    100%{
-        margin-bottom: 0px;
-    }
+@keyframes padd {
+  0% {
+    margin-bottom: 0px;
+  }
+  25% {
+    margin-bottom: 5px;
+  }
+  50% {
+    margin-bottom: 10px;
+  }
+  75% {
+    margin-bottom: 5px;
+  }
+  100% {
+    margin-bottom: 0px;
+  }
 }
 
-.cursor0, .cursor1, .cursor2{
-    width: 1px;
-    margin-left: 1px;
-    animation: blink 1s infinite;
-    display: none;
+.cursor0,
+.cursor1,
+.cursor2 {
+  width: 1px;
+  margin-left: 1px;
+  animation: blink 1s infinite;
+  display: none;
 }
-.cursor0.typing, .cursor1.typing, .cursor2.typing{
-    animation: none;
-    display: block;
-    background: white;
+.cursor0.typing,
+.cursor1.typing,
+.cursor2.typing {
+  animation: none;
+  display: block;
+  background: white;
 }
 
 @keyframes blink {
-    0%{background: white;}
-    49%{background: white;}
-    50%{background: transparent;}
-    99%{background: transparent;}
-    100%{background: white;}
+  0% {
+    background: white;
+  }
+  49% {
+    background: white;
+  }
+  50% {
+    background: transparent;
+  }
+  99% {
+    background: transparent;
+  }
+  100% {
+    background: white;
+  }
 }
 
-#continue, #cancel{
-    border: 1.5px solid white;
-    background-color: transparent;
-    color: white;
-    padding: 0.7rem 1.5rem;
-    text-transform: uppercase;
-    margin-right: 2px;
+#continue,
+#cancel {
+  border: 1.5px solid white;
+  background-color: transparent;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  text-transform: uppercase;
+  margin-right: 2px;
 }
 
-.explosion{
-    width: 150px;
+.explosion {
+  width: 150px;
 }

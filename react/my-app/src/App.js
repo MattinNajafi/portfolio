@@ -5,9 +5,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/home/home";
 import Shop from "./components/shop/shop";
 import AboutMe from "./components/aboutme/aboutme";
-import ContactMe from "./components/contactme/contact";
+import Work from "./components/work/work";
 import Intro from "./components/intro/intro";
-import Menu from "./components/menu/menu";
 import Header from "./components/header/header";
 
 class App extends React.Component {
@@ -57,13 +56,13 @@ class App extends React.Component {
     } else {
       return (
         <Router>
-          <div className="container">
+          <div className="page-container">
             <Header />
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/shop" component={Shop} />
               <Route exact path="/aboutme" component={AboutMe} />
-              <Route exact path="/contact" component={ContactMe} />
+              <Route exact path="/work" component={Work} />
             </Switch>
           </div>
         </Router>

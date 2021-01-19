@@ -11,6 +11,12 @@
   z-index: 10;
 }
 
-.container {
-  height: 100vh;
+.page-container {
+  height: 100%;
+}
+
+@media screen and (max-width: 405px) {
+  .loading-container > h4 {
+    font-size: 1rem;
+  }
 }
