@@ -129,6 +129,7 @@
   border: 0;
   font-size: 6rem;
   font-weight: 800;
+  outline: none;
 }
 .contact-me:hover {
   color: black !important;
