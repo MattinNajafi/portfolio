@@ -182,13 +182,14 @@ class Menu extends React.Component {
                       </Link>
                     </li>
                     <li>
-                      <a
+                      <button
+                        href=""
                         className="contact-me"
                         onClick={this.contactMe}
                         ref={(element) => (this.l4 = element)}
                       >
                         Contact&nbsp;me
-                      </a>
+                      </button>
                     </li>
                   </ul>
                 </nav>

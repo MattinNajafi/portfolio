@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import gsap from "gsap";
 import "./header.css";
 import { withRouter, Link } from "react-router-dom";
@@ -18,18 +18,6 @@ class Header extends React.Component {
       y: -50,
       opacity: 0,
       ease: "power3.out",
-    });
-
-    maintl.from(".mainpage-me", 1, {
-      opacity: 0,
-      y: 100,
-      stagger: 0.3,
-      ease: "power3.out",
-    });
-
-    maintl.from(".img-mainpage", 1, {
-      x: 300,
-      opacity: 0,
     });
   }
 

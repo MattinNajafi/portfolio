@@ -61,22 +61,6 @@
   width: 100%;
 }
 
-.icon-div {
-  width: 90%;
-  z-index: -1;
-}
-
-#insta {
-  font-size: 2.5rem;
-  margin-right: 1rem;
-  margin-left: 1rem;
-}
-#fb {
-  font-size: 2.5rem;
-}
-#linkedin {
-  font-size: 2.5rem;
-}
 /* Skillsbar */
 
 .skills > li {

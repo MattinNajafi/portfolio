@@ -125,6 +125,10 @@
 .contact-me {
   color: khaki !important;
   cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  font-size: 6rem;
+  font-weight: 800;
 }
 .contact-me:hover {
   color: black !important;
@@ -157,13 +161,15 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .links > nav li {
+  .links > nav li,
+  .contact-me {
     font-size: 5rem;
     height: 100px;
   }
 }
 @media screen and (max-width: 835px) {
-  .links > nav li {
+  .links > nav li,
+  .contact-me {
     font-size: 4rem;
     height: 90px;
   }
@@ -183,13 +189,15 @@
     flex-direction: column;
     justify-content: center;
   }
-  .links > nav li {
+  .links > nav li,
+  .contact-me {
     font-size: 4rem;
     height: 90px;
   }
 }
 @media screen and (max-width: 480px) {
-  .links > nav li {
+  .links > nav li,
+  .contact-me {
     font-size: 3rem;
     height: 80px;
   }
@@ -199,7 +207,8 @@
   }
 }
 @media screen and (max-width: 375px) {
-  .links > nav li {
+  .links > nav li,
+  .contact-me {
     font-size: 2.5rem;
     height: 60px;
   }

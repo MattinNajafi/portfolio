@@ -59,6 +59,7 @@ class AboutMe extends React.Component {
       }
     );
   }
+
   render() {
     return (
       <>
@@ -130,11 +131,6 @@ class AboutMe extends React.Component {
                 </div>
               </div>
             </section>
-          </div>
-          <div className="icon-div">
-            <i id="fb" className="fab fa-instagram-square"></i>
-            <i id="insta" className="fab fa-facebook-square"></i>
-            <i id="linkedin" className="fab fa-linkedin"></i>
           </div>
         </div>
       </>

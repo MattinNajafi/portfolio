@@ -4,7 +4,20 @@ import gsap from "gsap";
 
 class Home extends React.Component {
   state = {};
+  componentDidMount() {
+    let maintl = gsap.timeline();
+    maintl.from(".mainpage-me", 1, {
+      opacity: 0,
+      y: 100,
+      stagger: 0.3,
+      ease: "power3.out",
+    });
 
+    maintl.from(".img-mainpage", 1, {
+      x: 300,
+      opacity: 0,
+    });
+  }
   handleContent(event) {
     let positionX = event.clientX / window.innerWidth - 0.55;
     let positionY = event.clientY / window.innerHeight - 0.55;
