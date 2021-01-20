@@ -84,7 +84,7 @@ class Menu extends React.Component {
       });
 
       gsap.to(this.menu, {
-        duration: 1.3,
+        duration: 1.5,
         css: { display: "none" },
       });
 

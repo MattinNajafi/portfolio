@@ -168,6 +168,10 @@
     flex-direction: column;
   }
 
+  .skills {
+    justify-content: flex-start;
+  }
+
   .textbox > p {
     width: 100%;
     font-size: 1.3rem;

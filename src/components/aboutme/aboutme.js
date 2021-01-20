@@ -67,67 +67,65 @@ class AboutMe extends React.Component {
           <div className="aboutme-introabout1"></div>
           <div className="aboutme-introabout2"></div>
           <div className="wrapper-aboutme">
-            <div className="first">
-              <div className="textbox">
-                <h4>Mattin Atai Najafi</h4>
-                <p>
-                  I'm a web-developer. I specialize in{" "}
-                  <span id="greenspan">front-end development</span>
-                  which is building out the visual components of a website. I
-                  build interactive, responsive and beautiful websites through
-                  carefully crafted code and user-centric design. I work with
-                  technologies like HTML5, CSS3 and Javascript. I'm currently a
-                  freelancer and available to work.
-                </p>
-              </div>
-              <div className="skills">
-                <li>
-                  <h3>HTML</h3>
-                  <span className="bar">
-                    <span className="html"></span>
-                  </span>
-                </li>
+            <div className="textbox">
+              <h4>Mattin Atai Najafi</h4>
+              <p>
+                I'm a web-developer. I specialize in{" "}
+                <span id="greenspan">front-end development</span>
+                which is building out the visual components of a website. I
+                build interactive, responsive and beautiful websites through
+                carefully crafted code and user-centric design. I work with
+                technologies like HTML5, CSS3 and Javascript. I'm currently a
+                freelancer and available to work.
+              </p>
+            </div>
+            <div className="skills">
+              <li>
+                <h3>HTML</h3>
+                <span className="bar">
+                  <span className="html"></span>
+                </span>
+              </li>
 
-                <li>
-                  <h3>CSS</h3>
-                  <span className="bar">
-                    <span className="css"></span>
-                  </span>
-                </li>
+              <li>
+                <h3>CSS</h3>
+                <span className="bar">
+                  <span className="css"></span>
+                </span>
+              </li>
 
-                <li>
-                  <h3>JAVASCRIPT</h3>
-                  <span className="bar">
-                    <span className="javascript"></span>
-                  </span>
-                </li>
+              <li>
+                <h3>JAVASCRIPT</h3>
+                <span className="bar">
+                  <span className="javascript"></span>
+                </span>
+              </li>
 
-                <li>
-                  <h3>REACT</h3>
-                  <span className="bar">
-                    <span className="react"></span>
-                  </span>
-                </li>
-                <li>
-                  <h3>BOOTSTRAP</h3>
-                  <span className="bar">
-                    <span className="bootstrap"></span>
-                  </span>
-                </li>
+              <li>
+                <h3>REACT</h3>
+                <span className="bar">
+                  <span className="react"></span>
+                </span>
+              </li>
+              <li>
+                <h3>BOOTSTRAP</h3>
+                <span className="bar">
+                  <span className="bootstrap"></span>
+                </span>
+              </li>
 
-                <li>
-                  <h3>ANGULAR</h3>
-                  <span className="bar">
-                    <span className="angular"></span>
-                  </span>
-                </li>
-                <li>
-                  <h3>TYPESCRIPT</h3>
-                  <span className="bar">
-                    <span className="typescript"></span>
-                  </span>
-                </li>
-              </div>
+              <li>
+                <h3>ANGULAR</h3>
+                <span className="bar">
+                  <span className="angular"></span>
+                </span>
+              </li>
+              <li>
+                <h3>TYPESCRIPT</h3>
+                <span className="bar">
+                  <span className="typescript"></span>
+                </span>
+              </li>
             </div>
           </div>
         </div>
