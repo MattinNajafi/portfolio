@@ -80,55 +80,53 @@ class AboutMe extends React.Component {
                   freelancer and available to work.
                 </p>
               </div>
-              <div className="imgbox">
-                <div className="skills">
-                  <li>
-                    <h3>HTML</h3>
-                    <span className="bar">
-                      <span className="html"></span>
-                    </span>
-                  </li>
+              <div className="skills">
+                <li>
+                  <h3>HTML</h3>
+                  <span className="bar">
+                    <span className="html"></span>
+                  </span>
+                </li>
 
-                  <li>
-                    <h3>CSS</h3>
-                    <span className="bar">
-                      <span className="css"></span>
-                    </span>
-                  </li>
+                <li>
+                  <h3>CSS</h3>
+                  <span className="bar">
+                    <span className="css"></span>
+                  </span>
+                </li>
 
-                  <li>
-                    <h3>JAVASCRIPT</h3>
-                    <span className="bar">
-                      <span className="javascript"></span>
-                    </span>
-                  </li>
+                <li>
+                  <h3>JAVASCRIPT</h3>
+                  <span className="bar">
+                    <span className="javascript"></span>
+                  </span>
+                </li>
 
-                  <li>
-                    <h3>REACT</h3>
-                    <span className="bar">
-                      <span className="react"></span>
-                    </span>
-                  </li>
-                  <li>
-                    <h3>BOOTSTRAP</h3>
-                    <span className="bar">
-                      <span className="bootstrap"></span>
-                    </span>
-                  </li>
+                <li>
+                  <h3>REACT</h3>
+                  <span className="bar">
+                    <span className="react"></span>
+                  </span>
+                </li>
+                <li>
+                  <h3>BOOTSTRAP</h3>
+                  <span className="bar">
+                    <span className="bootstrap"></span>
+                  </span>
+                </li>
 
-                  <li>
-                    <h3>ANGULAR</h3>
-                    <span className="bar">
-                      <span className="angular"></span>
-                    </span>
-                  </li>
-                  <li>
-                    <h3>TYPESCRIPT</h3>
-                    <span className="bar">
-                      <span className="typescript"></span>
-                    </span>
-                  </li>
-                </div>
+                <li>
+                  <h3>ANGULAR</h3>
+                  <span className="bar">
+                    <span className="angular"></span>
+                  </span>
+                </li>
+                <li>
+                  <h3>TYPESCRIPT</h3>
+                  <span className="bar">
+                    <span className="typescript"></span>
+                  </span>
+                </li>
               </div>
             </div>
           </div>

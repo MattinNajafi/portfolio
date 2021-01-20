@@ -41,10 +41,6 @@
   align-items: center;
   width: 60%;
 }
-.imgbox {
-  width: 30%;
-  height: 100%;
-}
 
 .aboutme-introabout1 {
   position: absolute;
@@ -73,7 +69,7 @@
 }
 
 .skills {
-  width: 100%;
+  width: 30%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -181,11 +177,6 @@
   .textbox > p {
     font-size: 0.9rem;
     letter-spacing: 0px;
-  }
-
-  .imgbox {
-    width: 100%;
-    height: auto;
   }
 
   .skills {

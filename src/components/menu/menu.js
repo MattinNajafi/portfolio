@@ -42,6 +42,10 @@ class Menu extends React.Component {
         css: { display: "block" },
       });
 
+      gsap.to(["nav > ul > li > a", "nav > ul > li > button"], 1, {
+        css: { display: "block" },
+      });
+
       gsap.to([this.revealMenu, this.revealBackground], 0, {
         height: "100%",
         opacity: 1,
@@ -84,7 +88,11 @@ class Menu extends React.Component {
       });
 
       gsap.to(this.menu, {
-        duration: 1.5,
+        duration: 1.3,
+        css: { display: "none" },
+      });
+
+      gsap.to(["nav > ul > li > a", "nav > ul > li > button"], 1, {
         css: { display: "none" },
       });
 
