@@ -229,6 +229,9 @@
   .project6 {
     height: 40%;
   }
+  .projects-div > div > div:hover {
+    height: 50%;
+  }
 }
 
 @media screen and (max-width: 710px) {
@@ -239,6 +242,9 @@
   .project5,
   .project6 {
     height: 30%;
+  }
+  .projects-div > div > div:hover {
+    height: 40%;
   }
   .work-header {
     width: 40%;
@@ -261,7 +267,10 @@
   .project5,
   .project6 {
     height: 50%;
-    width: 100%;
+    width: 90%;
+  }
+  .projects-div > div > div:hover {
+    height: 60%;
   }
   .work-header {
     width: 100%;
