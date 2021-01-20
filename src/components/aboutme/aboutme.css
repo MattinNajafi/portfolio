@@ -156,8 +156,8 @@
 }
 @media screen and (max-width: 650px) {
   .wrapper-aboutme {
-    height: auto;
-    margin-bottom: 2rem;
+    height: 100%;
+    margin: 0;
   }
   .first {
     flex-direction: column;
@@ -167,7 +167,6 @@
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 5rem;
   }
 
   .textbox > p {
@@ -187,6 +186,7 @@
 
   .imgbox {
     width: 100%;
+    height: auto;
   }
 
   .skills {
@@ -205,9 +205,6 @@
 }
 
 @media screen and (max-width: 505px) {
-  .wrapper-aboutme {
-    margin-top: 1rem;
-  }
   .textbox > h4 {
     font-size: 2.3rem;
   }

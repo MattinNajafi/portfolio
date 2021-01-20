@@ -167,6 +167,9 @@
     font-size: 5rem;
     height: 100px;
   }
+  .copied {
+    top: 60%;
+  }
 }
 @media screen and (max-width: 835px) {
   .links > nav li,
@@ -176,6 +179,9 @@
   }
   .interest-bar {
     width: 80%;
+  }
+  .copied {
+    top: 57%;
   }
 }
 @media screen and (max-width: 650px) {
@@ -195,6 +201,11 @@
     font-size: 4rem;
     height: 90px;
   }
+
+  .copied {
+    top: 58%;
+    font-size: 3rem;
+  }
 }
 @media screen and (max-width: 480px) {
   .links > nav li,
@@ -203,6 +214,10 @@
     height: 80px;
   }
 
+  .copied {
+    top: 56%;
+    font-size: 2.5rem;
+  }
   .interest-bar {
     width: 100%;
   }
@@ -216,5 +231,9 @@
 
   .interest-bar {
     font-size: 0.6rem;
+  }
+  .copied {
+    top: 53%;
+    font-size: 2.5rem;
   }
 }

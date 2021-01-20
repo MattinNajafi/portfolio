@@ -122,7 +122,7 @@ class Menu extends React.Component {
       },
     });
     gsap.to(".copied", 2.5, {
-      top: "60%",
+      top: "70%",
       opacity: 0,
     });
 
@@ -135,7 +135,7 @@ class Menu extends React.Component {
     document.body.removeChild(textare);
 
     setTimeout(() => {
-      document.querySelector(".copied").style.top = "67%";
+      document.querySelector(".copied").style.top = "60%";
       document.querySelector(".copied").style.opacity = "1";
       document.querySelector(".copied").style.display = "none";
     }, 2700);

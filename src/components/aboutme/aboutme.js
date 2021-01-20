@@ -67,7 +67,7 @@ class AboutMe extends React.Component {
           <div className="aboutme-introabout1"></div>
           <div className="aboutme-introabout2"></div>
           <div className="wrapper-aboutme">
-            <section className="first">
+            <div className="first">
               <div className="textbox">
                 <h4>Mattin Atai Najafi</h4>
                 <p>
@@ -130,7 +130,7 @@ class AboutMe extends React.Component {
                   </li>
                 </div>
               </div>
-            </section>
+            </div>
           </div>
         </div>
       </>
