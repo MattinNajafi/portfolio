@@ -151,6 +151,9 @@
   }
 }
 @media screen and (max-width: 650px) {
+  .about-me-container {
+    margin: 0;
+  }
   .wrapper-aboutme {
     height: 100%;
     margin: 0;
@@ -161,7 +164,7 @@
   }
   .textbox {
     width: 100%;
-    display: block;
+    flex-direction: column;
   }
 
   .textbox > p {
@@ -198,10 +201,16 @@
   .textbox > h4 {
     font-size: 2.3rem;
   }
+  .textbox {
+    height: 830px;
+  }
 }
 @media screen and (max-width: 405px) {
   .textbox > h4 {
     font-size: 2rem;
+  }
+  .textbox {
+    height: 1500px;
   }
 }
 @media screen and (max-width: 330px) {
