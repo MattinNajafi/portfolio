@@ -3,13 +3,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  /* overflow: hidden; */
 }
 html {
+  height: 100%;
   overflow: scroll;
   overflow-x: hidden;
-  height: 100%;
 }
+
 ::-webkit-scrollbar {
   width: 0px; /* Remove scrollbar space */
   background: transparent; /* Optional: just make scrollbar invisible */

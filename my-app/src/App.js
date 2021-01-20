@@ -15,9 +15,6 @@ class App extends React.Component {
   };
 
   componentDidMount() {
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty("--vh", `${vh}px`);
-
     const tl = gsap.timeline();
 
     tl.from(".loading-container h4", 1.5, {
