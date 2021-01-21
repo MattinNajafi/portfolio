@@ -269,6 +269,11 @@
     height: 50%;
     width: 90%;
   }
+
+  .scroll {
+    display: none;
+  }
+
   .projects-div > div > div:hover {
     height: 60%;
   }
