@@ -12,17 +12,9 @@
   font-size: 1.8rem;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.first {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%;
-  width: 100%;
-}
 .textbox h4 {
   writing-mode: vertical-rl;
   margin-right: 1rem;
@@ -151,12 +143,9 @@
   }
 }
 @media screen and (max-width: 650px) {
-  .about-me-container {
-    margin: 0;
-    height: auto;
-  }
   .wrapper-aboutme {
     height: 100%;
+    flex-direction: column;
     margin: 0;
   }
   .first {
@@ -165,7 +154,9 @@
   }
   .textbox {
     width: 100%;
+    margin-bottom: 3rem;
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .skills {
@@ -206,10 +197,17 @@
   .textbox > h4 {
     font-size: 2.3rem;
   }
+  .textbox {
+    margin-bottom: 6rem;
+  }
 }
 @media screen and (max-width: 405px) {
   .textbox > h4 {
     font-size: 2rem;
+  }
+
+  .textbox {
+    margin-bottom: 8rem;
   }
 }
 @media screen and (max-width: 330px) {

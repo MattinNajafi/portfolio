@@ -32,6 +32,12 @@ class Menu extends React.Component {
   componentDidUpdate() {
     if (this.props.clicked === true) {
       //open
+
+      gsap.to(".wrapper-aboutme", 0.5, {
+        css: {
+          display: "none",
+        },
+      });
       gsap.to(".text-img-div", 0, {
         css: {
           zIndex: "-1",
@@ -74,6 +80,12 @@ class Menu extends React.Component {
       });
     } else if (this.props.clicked === false) {
       // close
+
+      gsap.to(".wrapper-aboutme", 0.1, {
+        css: {
+          display: "initial",
+        },
+      });
 
       gsap.to([this.revealBackground, this.revealMenu], 1.3, {
         height: 0,
