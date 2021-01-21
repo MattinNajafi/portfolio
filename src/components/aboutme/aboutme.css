@@ -171,6 +171,9 @@
     writing-mode: initial;
     font-size: 2.3rem;
   }
+  .textbox {
+    margin-bottom: 1rem;
+  }
 
   .textbox > p {
     font-size: 0.9rem;
