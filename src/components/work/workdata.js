@@ -13,21 +13,26 @@ const workData = [
   {
     id: 3,
     header: "M&M Weather",
-    description: "First react project where API connection was mandatory, project done with a classmate"
+    description:
+      "First react project where API connection was mandatory, project done with a classmate",
+  },
   {
     id: 4,
     header: "Bowl & Burrito",
-    description: "Just a shallow of a shop, project in UX Design, worked with mockup and wireframe",
+    description:
+      "Just a shallow of a shop, project in UX Design, worked with mockup and wireframe",
   },
   {
     id: 5,
     header: "Sneaker Shop",
-    description: "First webshop created together with a classmate, no backend included",
+    description:
+      "First webshop created together with a classmate, no backend included",
   },
   {
     id: 6,
     header: "CV",
-    description: "First portfolio created, on of the first projects in JavaScript",
+    description:
+      "First portfolio created, on of the first projects in JavaScript",
   },
 ];
 
