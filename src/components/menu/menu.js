@@ -81,9 +81,9 @@ class Menu extends React.Component {
     } else if (this.props.clicked === false) {
       // close
 
-      gsap.to(".wrapper-aboutme", 0.1, {
+      gsap.to(".wrapper-aboutme", 0, {
         css: {
-          display: "initial",
+          display: "flex",
         },
       });
 
@@ -96,7 +96,7 @@ class Menu extends React.Component {
       });
 
       gsap.to(this.menu, {
-        duration: 1.5,
+        duration: 1.3,
         css: { display: "none" },
       });
 
